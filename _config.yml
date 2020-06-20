@@ -12,15 +12,15 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "ko-KR"
 title                    : "JWK - blog"
 title_separator          : "-"
-subtitle                 : "이직하자..."
+subtitle                 : "..."
 name                     : "blog"
-description              : "An amazing website."
+description              : "개인공부 및 개발을 기록하는 블로그"
 url                      : # the base hostname & protocol for your site e.g. "https://gitblogdemo.github.io/"
 baseurl                  : # the subpath of your site, e.g. "https://jungwookim1271011706.github.io/"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -96,7 +96,7 @@ author:
   name             : "김정우"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "이직준비중.."
-  location         : "Somewhere"
+  location         : "Republic of Korea"
   email            :
   links:
     - label: "Email"
