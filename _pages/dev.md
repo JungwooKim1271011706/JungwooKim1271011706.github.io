@@ -3,7 +3,7 @@ title : "개발 공부"
 permalink : /categories/dev/
 layout : category
 author_profile : true
-taxonomy : dev
+# taxonomy : dev
 ----
 
 개발 관련 내용이다.
