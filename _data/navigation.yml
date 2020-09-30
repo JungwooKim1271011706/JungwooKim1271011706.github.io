@@ -4,9 +4,7 @@ main:
     url: /about/
   - title: "Categories"
     url: /categories/
-  - title: "Python"
-    url: /categories/python/
-  - title: "개인과제"
-    url: /sitemap/
+  - title: "개발 공부"
+    url: /categories/dev/
   - title : "일상"
     url: //

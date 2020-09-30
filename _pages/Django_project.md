@@ -1,9 +1,11 @@
 ---
-title : "Django-개인과제"
-permalink : /categories/python/
+title : "개발 공부"
+permalink : /categories/dev/
 layout : category
 author_profile : true
-taxonomy : python
+taxonomy : dev
 ----
 
-Django 개인 과제입니다.
+개발 관련 내용이다.
+학원에서 배운 내용에서 개인 공부한 내용을 집어넣어서
+기록하고 있다.
