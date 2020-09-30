@@ -1,7 +1,7 @@
 ---
 title : "개발 공부"
 permalink : /categories/dev/
-layout : category
+layout : categories
 author_profile : true
 # taxonomy : dev
 ----

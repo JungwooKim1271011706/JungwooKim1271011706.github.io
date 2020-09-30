@@ -6,5 +6,3 @@ main:
     url: /categories/
   - title: "개발 공부"
     url: /categories/dev/
-  - title : "일상"
-    url: /work/
