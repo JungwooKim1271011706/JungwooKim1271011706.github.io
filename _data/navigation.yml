@@ -4,5 +4,3 @@ main:
     url: /about/
   - title: "Categories"
     url: /categories/
-  - title: "개발 공부"
-    url: /categories/dev/
