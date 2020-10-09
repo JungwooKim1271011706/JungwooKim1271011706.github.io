@@ -18,7 +18,7 @@ sqlite3는 mysite/settings.py 안에 이미 설치되어 있다.
     }
 
 
-사용법은 간단하다. 이미 탑재되어 있기 때문에 python에 명령만 내리면 된다. mamage.py가 있는 디렉토리로 이동해서 python manage.py migrate를 입력하면 된다. 이후에 python manage.py runserver를 실행하면 정상적으로 웹서버를 시작할 수 있다.
+사용법은 간단하다. 이미 탑재되어 있기 때문에 python에 명령만 내리면 된다. manage.py가 있는 디렉토리로 이동해서 python manage.py migrate를 입력하면 된다. 이후에 python manage.py runserver를 실행하면 정상적으로 웹서버를 시작할 수 있다.
 
 이후에, Djangogirls는 Model을 만든다. 여기서 객체 지향 프로그래밍(OOP)에 대한 간략한 설명이 나온다. 물론 정확하게 이해하고 있는바는 없지만, 그래도 간단하게 정리하고 넘어가면, 객체 지향 프로그램은 개발자가 필요로 하는 자료구조, 데이터 등을 먼저 설계한 다음에 이들을 순서와 흐름에 맞게 개발하는 방식이다. 
 흔히 객체 지향 프로그래밍과 절차 지향 프로그래밍을 대립적으로 생각하기 쉬운데, 프로그래밍이라고 하는 근본적인 진행 과정이 있기 때문에, '절차'와 '객체'라고 하는 단어에 방점이 찍히기보다는 '절차 지향'과 '객체 지향'으로 나누어서 이해해야 할 것 같다. 이후 공부를 더 하다보면 다양한 프로그래밍에 대해 다룰 기회가 있을 것 같다.
@@ -33,7 +33,7 @@ sqlite3는 mysite/settings.py 안에 이미 설치되어 있다.
 
 이런 식으로 우리가 알고 있는 2차원 배열로 DB인 sqlite3에 하나씩 저장한다고 보면 된다. 모든 데이터들은 이런 방식으로 저장이 되며, 이를 생성하고, 읽고, 수정하고, 삭제하는 것이 기본적인 DB의 수행 과정이라고 보면 된다. 이후에 join이나 다양한 걸 배우겠지만, 인터넷으로 배우기만 해서 아직 써보지는 못했다.
 
-이후에 Djangogirls는 프로젝트를 시작한다. manage.py가 존재하는 디렉토리로 이동해서 python manage.py startapp blog를 실행하여 blog app을 만든다. 그러민 디렉토리 구성이 다음과 같아진다.
+이후에 Djangogirls는 프로젝트를 시작한다. manage.py가 존재하는 디렉토리로 이동해서 python manage.py startapp blog를 실행하여 blog app을 만든다. 그러면 디렉토리 구성이 다음과 같아진다.
 
     djangogirls
     ├── mysite <<startproject를 통해서 만든 프로젝트 이름
