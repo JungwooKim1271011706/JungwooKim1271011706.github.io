@@ -30,6 +30,10 @@ HashMap에서는 동일한 key에 해당하는 value를 집어넣을 경우에�
 &nbsp;&nbsp;&nbsp;&nbsp;Iterator의 함수를 사용할 수 있는 keys 변수가 만들어졌다. Iterator 인터페이스의 구성은 다음과 같다.
 
     public interface Iterator {
+        int cursor = 0; 
+        // 현재 cursor의 위치
+        int lastRet = -1;
+        // 최근 리턴된 요소의 위치
         boolean hasNext();
         // hasNext()는 읽어올 요소가 남아 있는지 확인하고 있으면 true 없으면 false를 반환한다.
         Object next();
@@ -50,10 +54,46 @@ HashMap에서는 동일한 key에 해당하는 value를 집어넣을 경우에�
 &nbsp;&nbsp;&nbsp;&nbsp;또한 향상된 for문을 이용해서도 가능하다.
 
     for (String key1 : hm.keySet() )
-    // hm.keySet()으로 반환한 Key값을 key1에 대입한다. 배열의 길이만큼 해당 동작을 반복한다.
+    // hm.keySet()으로 반환한 Key값들을 하나씩 key1에 대입한다. 배열의 길이만큼 해당 동작을 반복한다.
     {
         String value1 = hm.get(key1);
         System.out.println(key1 + " : " + value1);
     }
 
-&nbsp;&nbsp;&nbsp;&nbsp;keySet() 혹은 value(), entrySet()으로도 전부 출력이 가능하다. 하지만 아직 코드에 대해서 이해가 공부가 덜 된 상태여서, next로 커서를 옮기면 처음 key값은 건너뛰는게 아닌가 생각이 든다. 그리고 for 문에서는 커서에 대한 코드가 들어가지 않더라도 출력이 되는것 같은데, 어떻게 가능한지 좀 더 꼼꼼하게 따져보고 연구해본 다음에 수정 및 추가를 할 예정이다.
+&nbsp;&nbsp;&nbsp;&nbsp;keySet() 혹은 value(), entrySet()으로도 전부 출력이 가능하다. 그런데 의문이 생겼다. while문을 사용해서,Iterator의 cursor를 이용하는데, .hasnext()가 true이면 바로 keys.next()값을 key에 담아서 사용한다. next값을 사용하면 현재 cursor가 가리키는 값의 다음 데이터가 key에 초기화되는게 아닐까, 해서 좀 더 찾아보니, .next()안에서는 현재 cursor의 값을 (Object)next 변수에 저장한 다음에 cursor++;로 한칸 옮기겨 next를 리턴한다. 즉, next()를 사용하면 현재 cursor와 다음 cursor를 분리시킨 다음에 현재 cursor를 리턴하는 것이다.  
+
+    public Object next(){
+        Object next = get(cursor); //현재 cursor의 값을 next에 초기화한다.
+        latRet = cursor; //현재 cursor의 값을 latRet(최근 리턴 요소)에 초기화한다.
+        cursor++; // cursor를 후위증감연산자로 이동시킨다.
+        return next; //next를 리턴한다.
+    }
+    
+    이렇게 간단한 코드가 있는데, 인터넷에서 찾아본 내용이랑 java api랑 달라서 약간 혼동이 온다.
+    이건 ArrayList api에 있는 내용인데 next() 내용이 조금 달라서 같이 가져왔다. 이건 뭘까...
+
+     private class Itr implements Iterator<E> {
+        int cursor;       // index of next element to return
+        int lastRet = -1; // index of last element returned; -1 if no such
+        int expectedModCount = modCount;
+
+        Itr() {}
+
+        public boolean hasNext() {
+            return cursor != size;
+        }
+
+        @SuppressWarnings("unchecked")
+        public E next() {
+            checkForComodification();
+            int i = cursor;
+            if (i >= size)
+                throw new NoSuchElementException();
+            Object[] elementData = ArrayList.this.elementData;
+            if (i >= elementData.length)
+                throw new ConcurrentModificationException();
+            cursor = i + 1;
+            return (E) elementData[lastRet = i];
+        }
+
+&nbsp;&nbsp;&nbsp;&nbsp;이렇게 next() 함수의 내부를 살펴보면 대강의 진행 과정은 이해가 간다. 하지만 위는 ArrayList에 Iterator인데, HashMap에는 찾지 못했다. 다른 곳에 있는걸 상속받아서 사용하는 건지, 일단 조금 더 공부를 한 다음에 내용을 첨가해야겠다.
