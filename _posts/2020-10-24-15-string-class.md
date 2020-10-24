@@ -11,7 +11,7 @@ tag:
     String str1 = new String("abc"); // 생성자의 매개변수로 문자 생성 : 힙 메모리에 생성, 새로운 객체
     String str2 = "test"; // 문자열 상수를 가리킴 : 상수풀 : 문자열 상수의 메모리 주소를 가리킴
 
-&nbsp;&nbsp;&nbsp;&nbsp;String 클래스에서 주목할만한 기능은 문자열을 쪼개는 기능이다. 파이썬에서는 문자열 슬라이스라고 한다.    
+&nbsp;&nbsp;&nbsp;&nbsp;String 클래스에서 자주 사용하는 함수는 문자열을 쪼개는 함수다. 파이썬에서는 문자열 슬라이스라고 한다.    
 &nbsp;&nbsp;&nbsp;&nbsp;String에서 문자열을 쪼개는 기능을 하는 함수는 다음과 같다.
 
  - .split(String delim) : 구분자(delimiter)로 String 변수의 문자를 분할할 수 있다. 분할한 문자는 []로 호출할 수 있다. delimiter는 1개만 사용 가능하다.  
