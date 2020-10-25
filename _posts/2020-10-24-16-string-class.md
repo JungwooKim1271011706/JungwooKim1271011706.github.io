@@ -1,5 +1,5 @@
 ---
-title: 자바 - 15 (String Class)
+title: 자바 - 16 (String Class)
 category:
 - Java
 tag:
@@ -46,4 +46,3 @@ ex ) str.substring(1,5) 는 str 문자열의 인덱스 1~4까지의 문자열을
 
 .lastIndexOf(String str)   
 &nbsp;&nbsp;&nbsp;&nbsp;String에서 매개변수의 우측 인덱스를 반환한다, 고 하는데 차이를 잘 모르겠다. 다만 매개변수가 "."이 아니라 '.'일 경우에 동작하는 것 같다. char가 매개변수로 필요한게 아닐까.
-
