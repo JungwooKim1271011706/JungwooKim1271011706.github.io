@@ -344,9 +344,13 @@ DECODE(대상 컬럼, 기준 필드값, 데이터)
 	AND ENAME = 'SMITH';
 	
 아래는 SELECT 쿼리의 순서를 요약해놓은 것이다. 해당 쿼리 순서에 대한 자세한 내용은 참고문헌에 기재한다.
-	
+
+
+#SELECT 쿼리의 진행 순서
+
 ![SELECT_ORDER](assets/img/oracle/select_order.png)
 
+#테이블로 시각화된 SELECT 쿼리 진행 순서
 ![SELECT_ORDER_DETAIL](assets/img/oracle/select_order_detail.png)
 
 
