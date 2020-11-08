@@ -348,7 +348,7 @@ DECODE(대상 컬럼, 기준 필드값, 데이터)
 ![SELECT_ORDER]({{"assets/img/oracle/select_order.png" | relative_url}})
 *SELECT 쿼리의 진행 순서*
 
-![SELECT_ORDER_DETAIL](assets/img/oracle/select_order_detail.png)
+![SELECT_ORDER_DETAIL](assets/img/oracle/select_order_detail.png | relative_url)
 *테이블로 시각화된 SELECT 쿼리 진행 순서*
 
 *참고문헌  
