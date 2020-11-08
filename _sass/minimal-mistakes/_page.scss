@@ -245,6 +245,12 @@ body {
   }
 }
 
+img + em {
+  text-align : center;
+  font-size : .8rem;
+  color : lightgray;
+} // 추가된 값
+
 /*
    Social sharing
    ========================================================================== */
