@@ -75,4 +75,5 @@ bb.howling();
 
 _참고문헌_
 
-Spring 학원 교재
+Spring 학원 교재  
+Medium의 Dope님의 게시글 : <https://medium.com/webeveloper/%EC%9E%90%EB%B0%94-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%99%80-%EC%B6%94%EC%83%81%ED%81%B4%EB%9E%98%EC%8A%A4-6eecbe5d6350>
