@@ -1,5 +1,5 @@
 ---
-title: Spring MVC -  Spring Security - 01
+title: Spring Security -  Spring Security - 01
 category:
 - Java
 tag:
