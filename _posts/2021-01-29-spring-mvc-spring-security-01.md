@@ -3,7 +3,7 @@ title: Spring MVC -  Spring Security - 01
 category:
 - Java
 tag:
-- Spring MVC
+- Spring Security
 ---
 <hr/>
 
@@ -113,4 +113,5 @@ L : Spring Security를 Dynamic Web Project에 적용할 수 있게 되었다.
 <hr/>
 
 _참고문헌_
+
 제타건남님의 스프링 시큐리티 : <https://zgundam.tistory.com/44?category=430446>
