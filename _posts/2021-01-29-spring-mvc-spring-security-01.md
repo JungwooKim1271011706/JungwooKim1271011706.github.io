@@ -1,10 +1,11 @@
 ---
-title: Spring Security -  Spring Security - 01
+title: Spring Security - 01
 category:
 - Java
 tag:
 - Spring Security
 ---
+
 <hr/>
 
 >>개발 환경

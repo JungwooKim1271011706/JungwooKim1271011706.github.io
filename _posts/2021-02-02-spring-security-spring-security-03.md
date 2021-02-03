@@ -1,10 +1,11 @@
 ---
-title: Spring Security -  Spring Security - 03
+title: Spring Security - 03
 category:
 - Java
 tag:
 - Spring Security
 ---
+
 <hr/>
  
 >>개발 환경
@@ -105,4 +106,4 @@ tag:
 
 _참고문헌_  
 
-OffByOne님의 블로그 : <https://offbyone.tistory.com/88>  
+OffByOne님의 블로그 : <https://offbyone.tistory.com/88>
